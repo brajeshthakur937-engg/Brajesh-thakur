@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brajesh Thakur — Portfolio</title>
+  <meta name="description" content="Portfolio of Brajesh Thakur - B.Tech CSE student. Projects: Online Banking, Gemini Java App, etc." />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <style>
+    :root{ --bg:#0f1724; --card:#0b1220; --accent:#6366f1; --muted:#94a3b8; --glass: rgba(255,255,255,0.03);} 
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;color:#ecfeff;background:linear-gradient(180deg,var(--bg),#021025);-webkit-font-smoothing:antialiased}
+    .container{max-width:1000px;margin:36px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;font-weight:700;color:#021025}
+    h1{margin:0;font-size:20px}
+    p.lead{color:var(--muted);margin:6px 0 0;font-size:14px}
+    nav a{color:#cfe9ff;text-decoration:none;margin-left:14px;font-size:14px}
+
+    main{margin-top:28px}
+    .grid{display:grid;grid-template-columns:1fr;gap:16px}
+    @media(min-width:840px){ .grid{grid-template-columns:2fr 1fr} }
+
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:14px;box-shadow:0 6px 18px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+    .hero{display:flex;gap:18px;align-items:center}
+    .hero-info{flex:1}
+    .cta{margin-top:14px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:#021025;font-weight:600;text-decoration:none}
+    .btn-outline{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#cfe9ff}
+
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .skill{padding:8px 10px;border-radius:8px;background:var(--glass);font-size:13px;color:var(--muted)}
+
+    .projects{display:grid;gap:12px}
+    .project{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));border:1px solid rgba(255,255,255,0.03)}
+    .meta{color:var(--muted);font-size:13px}
+
+    aside .contact{display:flex;flex-direction:column;gap:10px}
+    footer{text-align:center;color:var(--muted);margin-top:26px;font-size:13px}
+
+    /* small utilities */
+    .muted{color:var(--muted)}
+    pre{background:#001122;padding:12px;border-radius:8px;overflow:auto;color:#dbeafe;font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">BS</div>
+        <div>
+          <h1>Brajesh Thakur</h1>
+          <p class="lead">B.Tech CSE • Java | Spring Boot | React • Building reliable apps</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="grid">
+        <section class="card">
+          <div class="hero">
+            <div class="hero-info">
+              <h2 style="margin:0 0 6px">Hi, I'm Brajesh 👋</h2>
+              <p class="muted">I build full-stack applications using Java, Spring Boot and React. Currently learning cloud, IoT and generative AI.</p>
+
+              <div class="cta">
+                <a class="btn" href="https://github.com/YOUR-USERNAME" target="_blank">View GitHub</a>
+                <a class="btn-outline" href="#projects">See Projects</a>
+              </div>
+
+              <div style="margin-top:12px">
+                <strong>Quick facts:</strong>
+                <div class="skills" style="margin-top:8px">
+                  <span class="skill">B.Tech CSE</span>
+                  <span class="skill">CGPA: 7.92</span>
+                  <span class="skill">Java</span>
+                  <span class="skill">React</span>
+                  <span class="skill">MySQL</span>
+                </div>
+              </div>
+            </div>
+            <div style="width:120px;height:120px;border-radius:16px;background:linear-gradient(135deg,#60a5fa,#7c3aed);display:flex;align-items:center;justify-content:center;color:#021025;font-weight:700">BS</div>
+          </div>
+
+          <hr style="border:none;height:1px;background:rgba(255,255,255,0.03);margin:16px 0" />
+
+          <div id="projects">
+            <h3 style="margin-top:0">Selected Projects</h3>
+            <div class="projects">
+              <article class="project">
+                <h4 style="margin:0">Online Banking System (Major Project)</h4>
+                <p class="meta">Java + JDBC + MySQL • College Major Project</p>
+                <p class="muted">A web application to manage users, accounts and transactions with secure login and transaction history.</p>
+                <div style="margin-top:8px">
+                  <a class="btn-outline" href="#" style="padding:8px 10px">View Source</a>
+                </div>
+              </article>
+
+              <article class="project">
+                <h4 style="margin:0">Gemini App (Java)</h4>
+                <p class="meta">Java • Maven • OkHttp • Uses Google Gemini API</p>
+                <p class="muted">A console application that sends prompts to Google Gemini and prints responses. Useful for experimenting with generative AI from Java.</p>
+                <div style="margin-top:8px">
+                  <a class="btn" href="https://github.com/YOUR-USERNAME/gemini-app-java" target="_blank">Open Gemini Repo</a>
+                  <a class="btn-outline" href="#" style="margin-left:8px">Readme</a>
+                </div>
+              </article>
+
+              <article class="project">
+                <h4 style="margin:0">Practice Utilities</h4>
+                <p class="meta">Algorithms & small Java apps</p>
+                <p class="muted">Collection of utility programs and interview practice code — anagram checker, file IO examples, etc.</p>
+              </article>
+            </div>
+          </div>
+
+          <hr style="border:none;height:1px;background:rgba(255,255,255,0.03);margin:16px 0" />
+
+          <h3 id="skills">Skills</h3>
+          <div class="skills">
+            <span class="skill">Java</span>
+            <span class="skill">Spring Boot</span>
+            <span class="skill">React</span>
+            <span class="skill">MySQL</span>
+            <span class="skill">Tailwind</span>
+            <span class="skill">Git</span>
+            <span class="skill">Docker (learning)</span>
+          </div>
+        </section>
+
+        <aside>
+          <div class="card contact">
+            <h3 style="margin:0 0 6px">Contact</h3>
+            <p class="muted" id="contact">Email: <a href="mailto:brajeshthakur937@gmail.com" style="color:#cfe9ff">brajeshthakur937@gmail.com</a></p>
+            <p class="muted">Phone: <a href="tel:+919302574159" style="color:#cfe9ff">+91 9302574159</a></p>
+
+            <div style="margin-top:8px">
+              <strong>Profiles</strong>
+              <div style="display:flex;gap:8px;margin-top:8px">
+                <a class="btn-outline" href="https://github.com/YOUR-USERNAME" target="_blank">GitHub</a>
+                <a class="btn-outline" href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank">LinkedIn</a>
+              </div>
+            </div>
+
+            <hr style="border:none;height:1px;background:rgba(255,255,255,0.03);margin:12px 0" />
+
+            <h4 style="margin:0">Quick Start</h4>
+            <p class="muted" style="font-size:13px">To run the Gemini Java app locally:</p>
+            <pre>
+git clone https://github.com/YOUR-USERNAME/gemini-app-java.git
+cd gemini-app-java
+# add your API key in GeminiClient.java
+mvn clean install
+mvn exec:java
+            </pre>
+
+            <div style="margin-top:10px">
+              <strong>Host portfolio</strong>
+              <p class="muted" style="font-size:13px">Push this folder to GitHub and enable GitHub Pages or use Vercel for static hosting.</p>
+            </div>
+          </div>
+
+          <div style="height:12px"></div>
+
+          <div class="card">
+            <h4 style="margin:0 0 6px">Resume</h4>
+            <p class="muted">Download a PDF resume (add link after you create it)</p>
+            <a class="btn" href="#" style="display:inline-block;margin-top:8px">Download Resume</a>
+          </div>
+        </aside>
+      </div>
+
+      <footer>
+        Built by Brajesh Thakur • Available for internships & fresher roles
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    // Small convenience: replace placeholders with actual username if stored in localStorage
+    (function(){
+      const username = localStorage.getItem('gh_username') || 'YOUR-USERNAME';
+      const linkedin = localStorage.getItem('linkedin') || 'YOUR-LINKEDIN';
+      document.querySelectorAll('a[href*="YOUR-USERNAME"]').forEach(a=>{
+        a.href = a.href.replace('YOUR-USERNAME', username);
+      });
+      document.querySelectorAll('a[href*="YOUR-LINKEDIN"]').forEach(a=>{
+        a.href = a.href.replace('YOUR-LINKEDIN', linkedin);
+      });
+    })();
+  </script>
+</body>
+</html>
